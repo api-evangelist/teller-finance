@@ -1,0 +1,34 @@
+# Teller Protocol (Teller Finance)
+
+> Teller Protocol is a decentralized, multi-chain lending and borrowing
+> protocol (Ethereum, Base, Arbitrum, Polygon, BNB), offering fixed-APR,
+> time-based loans from isolated lending pools with no oracle-driven margin
+> calls. Integration is via on-chain smart contracts, a GraphQL subgraph, and
+> an embeddable Cash Advance widget — not a hosted REST API.
+
+## Overview
+- Type: DeFi lending/borrowing protocol (on-chain smart contracts)
+- Website (current): https://www.teller.org/
+- Website (legacy brand): https://www.teller.finance/
+- Documentation: https://docs.teller.org/
+- Cash Advance Widget: https://www.teller.org/widget
+- GitHub organization: https://github.com/teller-protocol
+- Blog: https://medium.com/teller-finance
+
+## Developer surface
+- Smart contracts (Solidity): https://github.com/teller-protocol/teller-protocol-v2 (and teller-protocol-v1)
+- GraphQL subgraph (The Graph): https://github.com/teller-protocol/subgraph
+- Embeddable widget (npm, official): @teller-protocol/teller-widget — https://github.com/teller-protocol/teller-widget
+- Risk profile algorithms: https://github.com/teller-protocol/Risk-Profile-Algorithms
+
+## Integration notes
+- The primary programmatic interface is the TellerV2 smart contract, through
+  which pool owners open markets and lenders/borrowers participate.
+- Read-side data (markets, loans, bids, commitments) is served over GraphQL by
+  the Teller subgraph, which indexes protocol events.
+- Front-end integration is available via the Teller Widget, a drop-in React
+  component published to npm.
+
+## What this is NOT
+- There is no hosted REST/OpenAPI, no OAuth 2.0 authorization server, and no
+  API-key program. Authentication is wallet-based (on-chain transactions).

@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  npm registry + Teller Protocol GitHub org (github.com/teller-protocol);
+  web search of teller.finance developer surface
+notes: >-
+  Teller Protocol is a decentralized (DeFi) lending/borrowing protocol on
+  Ethereum and other EVM chains (Base, Arbitrum, Polygon, BNB). Its integration
+  surface is smart contracts + a GraphQL subgraph rather than a hosted REST API.
+  The one first-party client package published to a public registry is the
+  embeddable Teller (Cash Advance) Widget on npm.
+security_note: >-
+  The npm package's own dist-tag description warns: do NOT install version 2.3.2
+  (known malware); install 2.4.0 or higher. Latest observed: 2.4.2.
+packages:
+- name: '@teller-protocol/teller-widget'
+  registry: npm
+  official: true
+  version: 2.4.2
+  url: https://www.npmjs.com/package/@teller-protocol/teller-widget
+  install: npm i --save @teller-protocol/teller-widget
+  repo: https://github.com/teller-protocol/teller-widget
+  language: TypeScript
+  kind: widget
+  description: >-
+    Embeddable React widget (Teller Cash Advance Widget) that lets any dapp
+    integrate Teller's front end so users can take time-based cash advances
+    against tokens in their wallet (or a specified token list).

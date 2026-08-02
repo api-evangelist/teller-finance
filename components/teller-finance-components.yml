@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  github.com/teller-protocol/teller-widget + npm @teller-protocol/teller-widget;
+  web search of Teller Protocol developer surface
+notes: >-
+  Client-side embeddable UI surface (distinct from an SDK): a drop-in front end
+  a third-party dapp mounts to expose Teller lending flows to its own users.
+families:
+- family: Teller Widget
+  kind: embeddable-widget
+  loader: '@teller-protocol/teller-widget'
+  install: npm i --save @teller-protocol/teller-widget
+  repo: https://github.com/teller-protocol/teller-widget
+  components:
+  - name: Teller Widget
+    description: >-
+      Prebuilt React widget mounted inside a host dapp that lets end users take
+      a cash advance against tokens in their connected wallet or a curated token
+      list, driving the Teller Protocol contracts under the hood.

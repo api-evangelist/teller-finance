@@ -1,8 +1,29 @@
 aid: teller-finance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/teller-finance.png
 name: Teller Finance
-description: 'Teller Finance is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Teller Finance (Teller Protocol) is a decentralized, multi-chain lending and
+  borrowing protocol on Ethereum, Base, Arbitrum, Polygon, and BNB Chain.
+  Borrowers take fixed-APR, time-based loans from isolated lending pools using
+  their tokens as collateral, with no oracle-driven margin-call liquidations,
+  through an open order-book of markets governed by the TellerV2 smart contract.
+  The developer surface is on-chain (Solidity smart contracts) plus a GraphQL
+  subgraph for read-side data and an embeddable Cash Advance widget (npm) that
+  any dapp can drop into its front end - there is no hosted REST API, OAuth
+  server, or API-key program; authentication is wallet-based. Teller was
+  surfaced as a portfolio company of Bessemer Venture Partners and enriched here
+  from its public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/teller-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- DeFi
+- Lending
+- Blockchain
+- Ethereum
+- Smart Contracts
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +50,27 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.teller.finance/
+  url: https://www.teller.org/
+- type: Documentation
+  url: https://docs.teller.org/
+- type: GitHubOrganization
+  url: https://github.com/teller-protocol
+- type: Blog
+  url: https://medium.com/teller-finance
+- type: SourceCode
+  url: https://github.com/teller-protocol/teller-protocol-v2
+- type: Packages
+  url: packages/teller-finance-packages.yml
+- type: SDKs
+  url: packages/teller-finance-packages.yml
+- type: Components
+  url: components/teller-finance-components.yml
+- type: LLMsTxt
+  url: llms/teller-finance-llms.txt
+- type: DomainSecurity
+  url: security/teller-finance-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
